@@ -1,5 +1,5 @@
 /*
-The following is a MIT-style license:
+The following is a MIT license:
 
 Copyright (C) 2012 by Jason Famularo
 
