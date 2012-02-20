@@ -1,7 +1,7 @@
 #jquery.onidle
 
 ## What is it?
-jquery.onidle is a jQuery plugin that allows you to fun code when a series of events stop firing.
+jquery.onidle is a jQuery plugin that allows you to execute a single function when a monitored series of events stop firing.
 For example, when a user stops typing in or leaves a textbox, fire off validation.
 
 ## How to use it?
