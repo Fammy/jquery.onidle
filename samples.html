@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>jquery.onidle samples</title>
+ </head>
+ <body>
+	<h1>Sample One: Textbox entry</h1>
+	<label>Username:</label>
+	<input id="username" type="text" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="./jquery.onidle-1.0.0.js"></script>
+	<script>
+		$(function() {
+			$('#username').onidle('blur focusout keyup change', 2500, function() {
+				console.log('yo');
+			});
+		});
+	</script>
+ </body>
+ </html>
