@@ -5,13 +5,13 @@ jquery.onidle is a jQuery plugin that allows you to fun code when a series of ev
 For example, when a user stops typing in or leaves a textbox, fire off validation.
 
 ## How to use it?
-1. Include [jquery.onidle-1.0.0.min.js](blob/master/jquery.onidle-1.0.0.min.js) in your project. Bundling encouraged!
+1. Include [jquery.onidle-1.0.0.min.js](jquery.onidle/blob/master/jquery.onidle-1.0.0.min.js) in your project. Bundling encouraged!
 2. Call the following code:
-````javascript
+```javascript
 $(':text').onidle('focusout blur keyup change', 250, function() {
     // Only called once when events haven't fired for 250 milliseconds
 });
-````
+```
 
 ## Samples?
-[Samples](blob/master/samples.html)!
+[Samples](jquery.onidle/blob/master/samples.html)!
