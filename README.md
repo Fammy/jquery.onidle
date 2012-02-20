@@ -15,4 +15,4 @@ $(':text').onidle('focusout blur keyup change', 250, function() {
 ```
 
 ## Samples?
-[Samples](jquery.onidle/blob/master/samples.html)!
+Yes, we have [samples](http://fammy.github.com/jquery.onidle/samples.html)!
