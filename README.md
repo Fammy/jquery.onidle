@@ -9,8 +9,9 @@ For example, when a user stops typing in or leaves a textbox, fire off validatio
 2. Call the following code:
 
 ```javascript
-$(':text').onidle('focusout blur keyup change', 250, function() {
+$(':text').onidle('focusout blur keyup change', 250, function(event) {
     // Only called once when events haven't fired for 250 milliseconds
+	// The 'event' argument is the event object passed to the event that was fired.
 });
 ```
 
