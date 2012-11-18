@@ -31,7 +31,7 @@ THE SOFTWARE.
 				window.clearTimeout(existingTimeout);
 			}
 
-		    var timeout = window.setTimeout(function() { return func(event); }, duration);
+		    var timeout = window.setTimeout(function() { func(event); }, duration);
 			target.data('idleTimeout', timeout);
 		});
 
