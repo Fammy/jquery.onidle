@@ -25,13 +25,13 @@ THE SOFTWARE.
 	$.fn.onidle = function(events, duration, func) {
 		var target = this;
 		
-		this.on(events, function() {
+		this.on(events, function(event) {
 			var existingTimeout = target.data('idleTimeout');
 			if (existingTimeout) {
 				window.clearTimeout(existingTimeout);
 			}
-		
-			var timeout = window.setTimeout(func, duration)
+
+		    var timeout = window.setTimeout(function() { func(event); }, duration);
 			target.data('idleTimeout', timeout);
 		});
 
